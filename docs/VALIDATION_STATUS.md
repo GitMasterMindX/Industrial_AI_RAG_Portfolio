@@ -61,4 +61,5 @@ materials is separate from releasing operational code.
 - GH07H experimental execution: PASS
 - GH07H semantic capability: FAIL / NOT ESTABLISHED
 - Full-system release: HOLD
-- Public portfolio release: PENDING CONTENT APPROVAL
+- Public portfolio release: PUBLIC — owner approved and verified on 2026-10-14
+- Independent third-party licensing audit: not asserted
