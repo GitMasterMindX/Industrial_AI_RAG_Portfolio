@@ -17,13 +17,13 @@ This checklist describes **full-system** readiness, not approval to publish the 
 
 ## Separate public portfolio gate
 
-This repository candidate contains documentation, synthetic scenarios and selected results only. It excludes the proprietary implementation and is not a runnable full system.
+This public repository contains documentation, synthetic scenarios and selected results only. It excludes the proprietary implementation and is not a runnable full system.
 
 - [x] Separate portfolio package assembled and integrity checked
 - [x] Proprietary code excluded by strict package allowlist
 - [x] Public README distinguishes internal FAT from public artifacts
-- [ ] Complete human review of every public file and third-party rights
+- [x] Portfolio owner approved publication of the selected files and confirmed publication rights (2026-10-14); independent licensing audit not asserted
 - [x] Approve private GitHub commit and verify the RC3 file inventory on GitHub
-- [ ] Approve any future switch to PUBLIC explicitly
+- [x] Portfolio owner approved public visibility (2026-10-14)
 
-**Portfolio publication: PENDING APPROVAL.** No open-source license is intended or granted; `NOTICE.md` applies. An open-source LICENSE is not a requirement for this portfolio, but third-party rights still require review.
+**Portfolio publication: PUBLIC — owner approved and verified (2026-10-14).** Full-system release remains HOLD. No open-source license is granted; `NOTICE.md` applies. Independent third-party licensing verification is not asserted.
