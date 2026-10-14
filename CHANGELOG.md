@@ -1,5 +1,12 @@
 # Changelog
 
+## Public portfolio publication synchronization — 2026-10-14
+
+- Recorded owner-approved, verified PUBLIC visibility of the separate portfolio repository.
+- Corrected outdated pending-publication labels in two validation documents.
+- Preserved full-system release HOLD and experimental limitations.
+- No proprietary source code added.
+
 ## v0.1.0-portfolio-rc3 — 2026-10-14
 
 - Clarified that GH.06/GH.07 benchmark scripts are internal and absent from the public package.
