@@ -1,0 +1,218 @@
+[
+  {
+    "id": "Q001",
+    "question": "Co oznacza alarm ALM-101?",
+    "expected_section": "ALM-101",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q002",
+    "question": "Jak zdiagnozować alarm ALM-101?",
+    "expected_section": "ALM-101",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q003",
+    "question": "Co sprawdzić przy przegrzewaniu ALM-101?",
+    "expected_section": "ALM-101",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q004",
+    "question": "Jak zdiagnozować alarm komunikacji ALM-202?",
+    "expected_section": "ALM-202",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q005",
+    "question": "Co oznacza ALM-202 utrata komunikacji?",
+    "expected_section": "ALM-202",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q006",
+    "question": "Jakie kontrole dotyczą ALM-202?",
+    "expected_section": "ALM-202",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q007",
+    "question": "Co oznacza funkcja STO?",
+    "expected_section": "STO",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q008",
+    "question": "Jak działa Safe Torque Off STO?",
+    "expected_section": "STO",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q009",
+    "question": "Co mówi dokumentacja o STO?",
+    "expected_section": "STO",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q010",
+    "question": "Co oznacza alarm ALM-303?",
+    "expected_section": "ALM-303",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q011",
+    "question": "Jak zdiagnozować podnapięcie ALM-303?",
+    "expected_section": "ALM-303",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q012",
+    "question": "Jakie są przyczyny ALM-303?",
+    "expected_section": "ALM-303",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q013",
+    "question": "Co oznacza ALM-404?",
+    "expected_section": "ALM-404",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q014",
+    "question": "Jak zdiagnozować przeciążenie silnika ALM-404?",
+    "expected_section": "ALM-404",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q015",
+    "question": "Co sprawdzić dla ALM-404?",
+    "expected_section": "ALM-404",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q016",
+    "question": "Co oznacza alarm enkodera ALM-505?",
+    "expected_section": "ALM-505",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q017",
+    "question": "Jak zdiagnozować ALM-505?",
+    "expected_section": "ALM-505",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q018",
+    "question": "Jakie są przyczyny błędu ALM-505?",
+    "expected_section": "ALM-505",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q019",
+    "question": "Co oznacza alarm ALM-606?",
+    "expected_section": "ALM-606",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q020",
+    "question": "Jak zdiagnozować niezgodność parametrów ALM-606?",
+    "expected_section": "ALM-606",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q021",
+    "question": "Co sprawdzić dla ALM-606?",
+    "expected_section": "ALM-606",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q022",
+    "question": "Co oznacza awaria wentylatora ALM-707?",
+    "expected_section": "ALM-707",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q023",
+    "question": "Jak zdiagnozować ALM-707?",
+    "expected_section": "ALM-707",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q024",
+    "question": "Co sprawdzić przy ALM-707?",
+    "expected_section": "ALM-707",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q025",
+    "question": "Co oznacza alarm ALM-808?",
+    "expected_section": "ALM-808",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q026",
+    "question": "Jak zdiagnozować obwód awaryjny ALM-808?",
+    "expected_section": "ALM-808",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q027",
+    "question": "Co sprawdzić dla ALM-808?",
+    "expected_section": "ALM-808",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q028",
+    "question": "Co oznacza ALM-909?",
+    "expected_section": "ALM-909",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q029",
+    "question": "Jak zdiagnozować timeout fieldbus ALM-909?",
+    "expected_section": "ALM-909",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q030",
+    "question": "Co sprawdzić przy ALM-909?",
+    "expected_section": "ALM-909",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q031",
+    "question": "Co oznacza parametr PAR-010?",
+    "expected_section": "PAR-010",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q032",
+    "question": "Jak działa rampa przyspieszania PAR-010?",
+    "expected_section": "PAR-010",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q033",
+    "question": "Co opisuje dokumentacja PAR-010?",
+    "expected_section": "PAR-010",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q034",
+    "question": "Co oznacza parametr PAR-020?",
+    "expected_section": "PAR-020",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q035",
+    "question": "Jak opisano prąd znamionowy PAR-020?",
+    "expected_section": "PAR-020",
+    "category": "retrieval"
+  },
+  {
+    "id": "Q036",
+    "question": "Co sprawdzić w dokumentacji PAR-020?",
+    "expected_section": "PAR-020",
+    "category": "retrieval"
+  }
+]
