@@ -1,0 +1,330 @@
+{
+  "stage": "GH.07H",
+  "status": "PASS",
+  "model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "mode": "EXPERIMENTAL_REAL_NLI",
+  "dataset": "GH07G_FROZEN",
+  "case_count": 24,
+  "threshold": 0.8,
+  "margin": 0.2,
+  "metrics": {
+    "overall_accuracy": 0.75,
+    "decisive_coverage": 0.5385,
+    "wrong_confident_count": 0,
+    "confusion": {
+      "SUPPORTED": {
+        "SUPPORTED": 2,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT": 3
+      },
+      "CONTRADICTED": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 5,
+        "INSUFFICIENT": 3
+      },
+      "INSUFFICIENT": {
+        "SUPPORTED": 0,
+        "CONTRADICTED": 0,
+        "INSUFFICIENT": 11
+      }
+    }
+  },
+  "semantic_capability_pass": false,
+  "release_decision": "HOLD",
+  "limitations": [
+    "Uncalibrated confidence scores",
+    "English model on English claims, Polish questions not assessed",
+    "No claim-generation integration",
+    "No production document validation"
+  ],
+  "cases": [
+    {
+      "id": "SC001",
+      "expected": "SUPPORTED",
+      "observed": "SUPPORTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.0035930920857936144,
+        "entailment": 0.9803235530853271,
+        "neutral": 0.016083383932709694
+      },
+      "correct": true
+    },
+    {
+      "id": "SC002",
+      "expected": "CONTRADICTED",
+      "observed": "CONTRADICTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.9816583395004272,
+        "entailment": 0.007675520610064268,
+        "neutral": 0.010666130110621452
+      },
+      "correct": true
+    },
+    {
+      "id": "SC003",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.12413957715034485,
+        "entailment": 0.3983771502971649,
+        "neutral": 0.47748324275016785
+      },
+      "correct": true
+    },
+    {
+      "id": "SC004",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "LOW_CONFIDENCE",
+      "probabilities": {
+        "contradiction": 0.49226701259613037,
+        "entailment": 0.01885382831096649,
+        "neutral": 0.48887917399406433
+      },
+      "correct": true
+    },
+    {
+      "id": "SC005",
+      "expected": "SUPPORTED",
+      "observed": "INSUFFICIENT",
+      "reason": "LOW_CONFIDENCE",
+      "probabilities": {
+        "contradiction": 0.09005291759967804,
+        "entailment": 0.6466338038444519,
+        "neutral": 0.26331332325935364
+      },
+      "correct": false
+    },
+    {
+      "id": "SC006",
+      "expected": "CONTRADICTED",
+      "observed": "CONTRADICTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.8482668995857239,
+        "entailment": 0.03971938416361809,
+        "neutral": 0.11201362311840057
+      },
+      "correct": true
+    },
+    {
+      "id": "SC007",
+      "expected": "CONTRADICTED",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.16700206696987152,
+        "entailment": 0.0062829614616930485,
+        "neutral": 0.8267150521278381
+      },
+      "correct": false
+    },
+    {
+      "id": "SC008",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.18302766978740692,
+        "entailment": 0.0032260173466056585,
+        "neutral": 0.8137463331222534
+      },
+      "correct": true
+    },
+    {
+      "id": "SC009",
+      "expected": "SUPPORTED",
+      "observed": "INSUFFICIENT",
+      "reason": "LOW_CONFIDENCE",
+      "probabilities": {
+        "contradiction": 0.018085269257426262,
+        "entailment": 0.6760861277580261,
+        "neutral": 0.30582860112190247
+      },
+      "correct": false
+    },
+    {
+      "id": "SC010",
+      "expected": "CONTRADICTED",
+      "observed": "CONTRADICTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.8286320567131042,
+        "entailment": 0.00743713416159153,
+        "neutral": 0.16393081843852997
+      },
+      "correct": true
+    },
+    {
+      "id": "SC011",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.1522241085767746,
+        "entailment": 0.01149981003254652,
+        "neutral": 0.8362760543823242
+      },
+      "correct": true
+    },
+    {
+      "id": "SC012",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "LOW_CONFIDENCE",
+      "probabilities": {
+        "contradiction": 0.6107072234153748,
+        "entailment": 0.0012897003907710314,
+        "neutral": 0.38800308108329773
+      },
+      "correct": true
+    },
+    {
+      "id": "SC013",
+      "expected": "SUPPORTED",
+      "observed": "SUPPORTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.005459750536829233,
+        "entailment": 0.9614694118499756,
+        "neutral": 0.03307083994150162
+      },
+      "correct": true
+    },
+    {
+      "id": "SC014",
+      "expected": "CONTRADICTED",
+      "observed": "CONTRADICTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.9973387122154236,
+        "entailment": 0.0004316878621466458,
+        "neutral": 0.0022295855451375246
+      },
+      "correct": true
+    },
+    {
+      "id": "SC015",
+      "expected": "CONTRADICTED",
+      "observed": "INSUFFICIENT",
+      "reason": "LOW_CONFIDENCE",
+      "probabilities": {
+        "contradiction": 0.5584458112716675,
+        "entailment": 0.06905622035264969,
+        "neutral": 0.3724980354309082
+      },
+      "correct": false
+    },
+    {
+      "id": "SC016",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.03615830838680267,
+        "entailment": 0.0027178546879440546,
+        "neutral": 0.9611238241195679
+      },
+      "correct": true
+    },
+    {
+      "id": "SC017",
+      "expected": "SUPPORTED",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.0031151704024523497,
+        "entailment": 0.28639331459999084,
+        "neutral": 0.7104915380477905
+      },
+      "correct": false
+    },
+    {
+      "id": "SC018",
+      "expected": "CONTRADICTED",
+      "observed": "CONTRADICTED",
+      "reason": "MODEL_PREDICTION_UNVALIDATED",
+      "probabilities": {
+        "contradiction": 0.9805399179458618,
+        "entailment": 0.0016528158448636532,
+        "neutral": 0.01780725084245205
+      },
+      "correct": true
+    },
+    {
+      "id": "SC019",
+      "expected": "CONTRADICTED",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.02909402921795845,
+        "entailment": 0.004405072890222073,
+        "neutral": 0.9665008783340454
+      },
+      "correct": false
+    },
+    {
+      "id": "SC020",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.015898479148745537,
+        "entailment": 0.003273875918239355,
+        "neutral": 0.9808276295661926
+      },
+      "correct": true
+    },
+    {
+      "id": "SC021",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.023418530821800232,
+        "entailment": 0.008659540675580502,
+        "neutral": 0.9679219722747803
+      },
+      "correct": true
+    },
+    {
+      "id": "SC022",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.04946044087409973,
+        "entailment": 0.015247279778122902,
+        "neutral": 0.9352922439575195
+      },
+      "correct": true
+    },
+    {
+      "id": "SC023",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.08182533085346222,
+        "entailment": 0.0015781618421897292,
+        "neutral": 0.916596531867981
+      },
+      "correct": true
+    },
+    {
+      "id": "SC024",
+      "expected": "INSUFFICIENT",
+      "observed": "INSUFFICIENT",
+      "reason": "MODEL_NEUTRAL",
+      "probabilities": {
+        "contradiction": 0.05341680720448494,
+        "entailment": 0.002840736648067832,
+        "neutral": 0.9437425136566162
+      },
+      "correct": true
+    }
+  ]
+}
