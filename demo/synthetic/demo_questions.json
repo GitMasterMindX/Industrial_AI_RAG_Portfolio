@@ -1,0 +1,4 @@
+[
+  {"question":"Co oznacza alarm ALM-101?", "expected_section":"ALM-101"},
+  {"question":"Jak zdiagnozować alarm komunikacji ALM-202?", "expected_section":"ALM-202"}
+]
