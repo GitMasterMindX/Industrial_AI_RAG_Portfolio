@@ -1,0 +1,198 @@
+{
+  "stage": "GH.07G",
+  "origin": "independent hand-authored challenge set; NOT included in verifier FACTS",
+  "cases": [
+    {
+      "id": "SC001",
+      "section": "STO",
+      "question": "Co oznacza STO?",
+      "claim": "STO inhibits torque generation",
+      "expected": "SUPPORTED",
+      "challenge": "paraphrase"
+    },
+    {
+      "id": "SC002",
+      "section": "STO",
+      "question": "Co oznacza STO?",
+      "claim": "STO does not prevent torque generation",
+      "expected": "CONTRADICTED",
+      "challenge": "negation"
+    },
+    {
+      "id": "SC003",
+      "section": "STO",
+      "question": "Co oznacza STO?",
+      "claim": "STO removes hazardous electrical voltage",
+      "expected": "INSUFFICIENT",
+      "challenge": "unsupported_extension"
+    },
+    {
+      "id": "SC004",
+      "section": "STO",
+      "question": "Co oznacza STO?",
+      "claim": "STO always brakes the motor mechanically",
+      "expected": "INSUFFICIENT",
+      "challenge": "unsupported_extension"
+    },
+    {
+      "id": "SC005",
+      "section": "ALM-101",
+      "question": "Co oznacza ALM-101?",
+      "claim": "Alarm ALM-101 reports excessive temperature",
+      "expected": "SUPPORTED",
+      "challenge": "paraphrase"
+    },
+    {
+      "id": "SC006",
+      "section": "ALM-101",
+      "question": "Co oznacza ALM-101?",
+      "claim": "ALM-101 does not indicate overheating",
+      "expected": "CONTRADICTED",
+      "challenge": "negation"
+    },
+    {
+      "id": "SC007",
+      "section": "ALM-101",
+      "question": "Co oznacza ALM-101?",
+      "claim": "ALM-101 indicates a network communication fault",
+      "expected": "CONTRADICTED",
+      "challenge": "nearby_alarm"
+    },
+    {
+      "id": "SC008",
+      "section": "ALM-101",
+      "question": "Co oznacza ALM-101?",
+      "claim": "ALM-101 triggers exactly at 85 C",
+      "expected": "INSUFFICIENT",
+      "challenge": "invented_threshold"
+    },
+    {
+      "id": "SC009",
+      "section": "ALM-202",
+      "question": "Co oznacza ALM-202?",
+      "claim": "ALM-202 is a communication loss alarm",
+      "expected": "SUPPORTED",
+      "challenge": "paraphrase"
+    },
+    {
+      "id": "SC010",
+      "section": "ALM-202",
+      "question": "Co oznacza ALM-202?",
+      "claim": "ALM-202 reports overheating",
+      "expected": "CONTRADICTED",
+      "challenge": "nearby_alarm"
+    },
+    {
+      "id": "SC011",
+      "section": "ALM-202",
+      "question": "Co oznacza ALM-202?",
+      "claim": "ALM-202 indicates a lost Ethernet connection specifically",
+      "expected": "INSUFFICIENT",
+      "challenge": "unsupported_specificity"
+    },
+    {
+      "id": "SC012",
+      "section": "ALM-202",
+      "question": "Co oznacza ALM-202?",
+      "claim": "ALM-202 automatically resets after 5 seconds",
+      "expected": "INSUFFICIENT",
+      "challenge": "invented_timing"
+    },
+    {
+      "id": "SC013",
+      "section": "PAR-010",
+      "question": "Co oznacza PAR-010?",
+      "claim": "PAR-010 configures the acceleration ramp time",
+      "expected": "SUPPORTED",
+      "challenge": "paraphrase"
+    },
+    {
+      "id": "SC014",
+      "section": "PAR-010",
+      "question": "Co oznacza PAR-010?",
+      "claim": "PAR-010 is not an acceleration ramp parameter",
+      "expected": "CONTRADICTED",
+      "challenge": "negation"
+    },
+    {
+      "id": "SC015",
+      "section": "PAR-010",
+      "question": "Co oznacza PAR-010?",
+      "claim": "PAR-010 sets motor rated current",
+      "expected": "CONTRADICTED",
+      "challenge": "nearby_parameter"
+    },
+    {
+      "id": "SC016",
+      "section": "PAR-010",
+      "question": "Co oznacza PAR-010?",
+      "claim": "PAR-010 defaults to 2.5 seconds",
+      "expected": "INSUFFICIENT",
+      "challenge": "invented_numeric"
+    },
+    {
+      "id": "SC017",
+      "section": "PAR-020",
+      "question": "Co oznacza PAR-020?",
+      "claim": "PAR-020 uses information from the motor nameplate",
+      "expected": "SUPPORTED",
+      "challenge": "paraphrase"
+    },
+    {
+      "id": "SC018",
+      "section": "PAR-020",
+      "question": "Co oznacza PAR-020?",
+      "claim": "PAR-020 is independent of motor nameplate information",
+      "expected": "CONTRADICTED",
+      "challenge": "negation"
+    },
+    {
+      "id": "SC019",
+      "section": "PAR-020",
+      "question": "Co oznacza PAR-020?",
+      "claim": "PAR-020 controls acceleration ramp duration",
+      "expected": "CONTRADICTED",
+      "challenge": "nearby_parameter"
+    },
+    {
+      "id": "SC020",
+      "section": "PAR-020",
+      "question": "Co oznacza PAR-020?",
+      "claim": "PAR-020 is safety-certified to SIL 3",
+      "expected": "INSUFFICIENT",
+      "challenge": "invented_certification"
+    },
+    {
+      "id": "SC021",
+      "section": "STO",
+      "question": "Co oznacza STO?",
+      "claim": "STO prevents torque generation in every electrical fault scenario",
+      "expected": "INSUFFICIENT",
+      "challenge": "unjustified_universal"
+    },
+    {
+      "id": "SC022",
+      "section": "ALM-101",
+      "question": "Co oznacza ALM-101?",
+      "claim": "ALM-101 is a warning rather than an alarm",
+      "expected": "INSUFFICIENT",
+      "challenge": "unproven_classification"
+    },
+    {
+      "id": "SC023",
+      "section": "PAR-010",
+      "question": "Co oznacza PAR-010?",
+      "claim": "PAR-010 acceleration ramp is exactly 100 ms",
+      "expected": "INSUFFICIENT",
+      "challenge": "invented_units"
+    },
+    {
+      "id": "SC024",
+      "section": "PAR-020",
+      "question": "Co oznacza PAR-020?",
+      "claim": "PAR-020 sets 400 volts",
+      "expected": "INSUFFICIENT",
+      "challenge": "invented_voltage"
+    }
+  ]
+}
