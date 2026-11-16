@@ -2,13 +2,25 @@
 
 **Public Portfolio | v0.1.0-portfolio-rc3 | Pre-release**
 
-Industrial AI RAG Assistant is an engineering research and
-development project exploring retrieval-augmented assistance
-for industrial technical documentation.
+Industrial AI RAG Assistant is an engineering R&D project that explores how to
+answer questions about industrial equipment using evidence from technical
+documentation. The pipeline design covers document retrieval, query routing,
+evidence validation, and the decision to answer or abstain.
 
-The project investigates document retrieval, query routing,
-evidence validation, answerability assessment, and
-safety-oriented response gating.
+## Walk through an example
+
+The [fictional FD-100 drive manual](demo/synthetic/fictional_drive_manual.md)
+defines ALM-202 as a loss of communication between the controller and the drive.
+The [sample queries](demo/synthetic/demo_questions.json) map an ALM-202 question
+to that section. A question about an exact replacement part number has no
+support in the manual, so the intended behavior is to report insufficient
+evidence. These examples illustrate the design using synthetic data.
+
+| To review | Start here |
+| --- | --- |
+| How the pipeline decides whether it can answer | [Architecture overview](#architecture-overview) |
+| How the semantic verification experiment performed | [Results on 24 synthetic cases](benchmarks/public/gh07h_report.json) |
+| Which validation steps still need evidence | [Validation status](docs/VALIDATION_STATUS.md) and [full-system release gate](docs/GH07_RELEASE_GATE.md) |
 
 ## Repository purpose
 
@@ -112,7 +124,7 @@ No executable RAG demo is distributed in this release.
 ## Repository structure
 
 ```text
-Industrial_AI_RAG_Assistant/
+Industrial_AI_RAG_Portfolio/
 ├── README.md
 ├── SECURITY.md
 ├── CHANGELOG.md
