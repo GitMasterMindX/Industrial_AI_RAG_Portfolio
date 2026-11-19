@@ -98,10 +98,25 @@ pass the release gate**.
 The report explicitly records `semantic_capability_pass:
 false` and `release_decision: HOLD`.
 
+### GH07I — deterministic multi-claim verification and answer release
+
+Validation milestone: 2026-11-19 (private Windows staging, Python 3.12.10).
+
+- **84/84 targeted regression tests passed**, including 47 new GH07I tests and 10 offline end-to-end scenarios.
+- Claim-level evidence scoping, SHA-256 evidence integrity and identifier coverage checks.
+- Fail-closed, all-or-nothing publication of reviewed synthetic propositions: contradictory claims are blocked; missing evidence or incomplete coverage causes abstention.
+- Hybrid retrieval and reciprocal rank fusion using deterministic demonstration adapters.
+- Identical rankings and outputs across 10 repetitions of one selected multi-alarm scenario.
+- Recovery checkpoint verified against 50 payload hashes; restored code passed all 84 targeted tests using the existing isolated environment.
+
+The offline scenarios used synthetic documentation and explicitly supplied candidate claims. They did not validate BM25Okapi, SentenceTransformer, ChromaDB, free-form LLM generation or general semantic verification in the integrated GH07I path. Selected Polish and English routing scenarios passed; this does not qualify multilingual semantic verification. Clean-machine environment reconstruction was not tested.
+
+These results are from private staging, not an executable public demo. They are distinct from the historical 216-test FAT and GH07H NLI experiment; the counts must not be added together. **Production release remains HOLD.**
+
 ### Important limitations
 
 - The model confidence scores are not calibrated.
-- Polish-language questions were not assessed in GH07H.
+- Polish-language questions were not assessed in the published GH07H experiment. GH07I routing tests do not establish Polish semantic verification.
 - Claim-generation integration was not demonstrated.
 - Production documentation was not validated.
 - Real retrieval FAT has not been confirmed.
